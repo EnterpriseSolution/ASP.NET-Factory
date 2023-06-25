@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <ds>
+    <NodeID>1</NodeID>
+    <Text>C#代码</Text>
+    <FilePath />
+    <NodeType>folder</NodeType>
+    <ParentID>0</ParentID>
+    <OrderID>1</OrderID>
+  </ds>
+  <ds>
+    <NodeID>2</NodeID>
+    <Text>默认模版</Text>
+    <FilePath>Template\默认模版.cmt</FilePath>
+    <NodeType>file</NodeType>
+    <ParentID>1</ParentID>
+    <OrderID>1</OrderID>
+  </ds>
+  <ds>
+    <NodeID>3</NodeID>
+    <Text>VB代码</Text>
+    <FilePath />
+    <NodeType>folder</NodeType>
+    <ParentID>0</ParentID>
+    <OrderID>2</OrderID>
+  </ds>
+  <ds>
+    <NodeID>4</NodeID>
+    <Text>页面代码</Text>
+    <FilePath />
+    <NodeType>folder</NodeType>
+    <ParentID>0</ParentID>
+    <OrderID>3</OrderID>
+  </ds>
+  <ds>
+    <NodeID>5</NodeID>
+    <Text>默认模版2</Text>
+    <FilePath>Template\默认模版2.cmt</FilePath>
+    <NodeType>file</NodeType>
+    <ParentID>1</ParentID>
+    <OrderID>1</OrderID>
+  </ds>
+</NewDataSet>

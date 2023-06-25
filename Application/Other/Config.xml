@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ModuleSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AppFrame>F3</AppFrame>
+  <BLLType>System.Data.DataRowView</BLLType>
+  <DALType>94F2CF68-CECB-47b5-81D9-68BF5806ACF2</DALType>
+  <DbHelperName>DbHelperSQL</DbHelperName>
+  <EditFont>新宋体</EditFont>
+  <EditFontSize>9</EditFontSize>
+  <Folder />
+  <Namepace />
+  <ProcPrefix>UP_</ProcPrefix>
+  <ProjectName />
+</ModuleSettings>

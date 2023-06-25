@@ -1,0 +1,461 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44D695A5-FE60-42B3-99FB-A31CDFC3E0B4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>CodeStudio.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Open Studio</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WebMatrix</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Codematic.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/Codematic/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\MagicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <HintPath>System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+      <HintPath>System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+      <HintPath>System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <HintPath>System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeCreate\ConfigDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeCreate\SQLNetPlus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FrmDataSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FrmDataSource.Designer.cs">
+      <DependentUpon>FrmDataSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Table.cs" />
+    <Compile Include="Form\TypeMapping.cs" />
+    <Compile Include="Properties\StringResources.cs" />
+    <Compile Include="Properties\Resources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Control\DALTypeAddIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\TempNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Control\UcAddInManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcCodeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcCSSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcDatatype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcDBSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcOptionEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcOptionsEnviroments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcOptionsQuerySettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcOptionStartUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UcSysManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\AppConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\AppSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\CMTreeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Component\FrmCodeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CodeExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\CodeMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CodeMakerM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CodeTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CodeTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DataExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DataList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\DbBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DbConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\DbOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\DbQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DbSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\DbToScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeCreate\DbTypeSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\DbView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormCommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Component\FrmGotoLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\LogInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Component\LoginSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ModuleConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\ModuleSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\ObjHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeCreate\OptionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\ProjectExp.cs">
+    </Compile>
+    <Compile Include="Form\ProjectExpadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProjectSet.cs">
+    </Compile>
+    <Compile Include="Form\PropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\RenameFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeCreate\SendErrInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TempView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ThreadExceptionHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\ColumnInfo.cs" />
+    <EmbeddedResource Include="Component\CodeMaker.resx">
+      <DependentUpon>CodeMaker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeCreate\DbTypeSel.resx">
+      <DependentUpon>DbTypeSel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\LoginSQL.resx">
+      <DependentUpon>LoginSQL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeCreate\SendErrInfo.resx">
+      <DependentUpon>SendErrInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DbView.resx">
+      <DependentUpon>DbView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DbQuery.resx">
+      <DependentUpon>DbQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CodeExport.resx">
+      <DependentUpon>CodeExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\CodeMakerM.resx">
+      <DependentUpon>CodeMakerM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DbBrowser.resx">
+      <DependentUpon>DbBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UcOptionsEnviroments.resx">
+      <DependentUpon>UcOptionsEnviroments.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Component\FrmCodeEditor.resx">
+      <DependentUpon>FrmCodeEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FrmDataSource.resx">
+      <DependentUpon>FrmDataSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\appconfig.config" />
+    <None Include="Other\cmcfg.ini" />
+    <EmbeddedResource Include="Other\datatype.ini" />
+    <None Include="Other\ProConfig.config" />
+    <EmbeddedResource Include="CodeCreate\ConfigDB.resx">
+      <DependentUpon>ConfigDB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeCreate\SQLNetPlus.resx">
+      <DependentUpon>SQLNetPlus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\DALTypeAddIn.resx">
+      <DependentUpon>DALTypeAddIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\CodeDAL.addin" />
+    <None Include="Resources\Server1.ico" />
+    <None Include="Resources\toolbtn_AddServer.Image.png" />
+    <None Include="Resources\toolbtn_Connect.Image.png" />
+    <None Include="Resources\toolbtn_Refrush.Image.png" />
+    <None Include="Resources\toolbtn_unConnect.Image.png" />
+    <None Include="Resources\toolStrip1.BackgroundImage.gif" />
+    <None Include="Resources\toolStrip1.BackgroundImage1.gif" />
+    <None Include="Resources\toolbtn_AddServer.Image1.png" />
+    <None Include="Resources\toolbtn_Connect.Image1.png" />
+    <None Include="Resources\toolbtn_Refrush.Image1.png" />
+    <None Include="Resources\toolbtn_unConnect.Image1.png" />
+    <None Include="Resources\toolStrip1.BackgroundImage2.gif" />
+    <EmbeddedResource Include="Other\Config.xml" />
+    <Content Include="CodeStudio.ico" />
+    <Content Include="Other\CodeDAL.xml" />
+    <Content Include="Other\Snippets.xml" />
+    <Content Include="Other\temptree.xml" />
+    <Content Include="Read.txt" />
+    <Content Include="Resources\Tables.ico" />
+    <Content Include="Resources\Computer.ico" />
+    <Content Include="Resources\Database.ico" />
+    <Content Include="Resources\Project.ico" />
+    <Content Include="Resources\Sharp.ico" />
+    <Content Include="Resources\Table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{57F7B3D5-0FD5-4894-BD14-F66A19BD378D}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
